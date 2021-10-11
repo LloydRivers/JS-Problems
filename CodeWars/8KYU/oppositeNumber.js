@@ -7,10 +7,8 @@
 // -34: 34
 
 
-function opposite(number){
-    let oppNum = 0 - number
-    return oppNum;
-    }
+let opposite = num => -num;
+    
   console.log(opposite(1))
   console.log(opposite(14))
   console.log(opposite(-34))
