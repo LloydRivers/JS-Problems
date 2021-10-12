@@ -2,9 +2,9 @@
 // all numbers from 1 up to and including the max. The function doesn't need to return any value. It
 // should just print to the terminal.
 function countUp(max) {
-for (let i = 0; i <=max; i++){
-    console.log(i)
-}
+    for( let i =1; i <= max; i++) {
+        console.log(i)
+    }
 }
 
 countUp(5);
@@ -15,8 +15,8 @@ countUp(5);
 //  4
 //  5
 
-// countUp(3);
-// // prints
-// //  1
-// //  2
-// //  3
+countUp(3);
+// prints
+//  1
+//  2
+//  3
