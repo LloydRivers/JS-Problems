@@ -27,3 +27,4 @@ let array1 = [
 
     return total
 }
+//xxx
