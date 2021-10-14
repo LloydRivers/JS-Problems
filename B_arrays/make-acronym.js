@@ -2,14 +2,20 @@
 // return a string containing the first character of each word in the sentence.
 
 function makeAcronym(str) {
-    let words = str.split(' ');
-    for (let i = 0; i < words.length; i++) {
-        let word = words[i]
-       return  word.slice(1)
+    let string = ''; // This will be returned
+    let words = str.split(' ') // split() it splits a string into an array
+        for (let i = 0; i < words.length; i++) {
+        string += words[i][0]
+        // console.log(words[i][0])
+        // console.log(words) // this will give us back an array
+        // console.log(words[i])
     }
+    return string.toUpperCase() 
 }
 
+
+
 console.log(makeAcronym("New York")); // NY
-// console.log(makeAcronym("same stuff different day")); // SSDD
-// console.log(makeAcronym("Laugh out loud")); // LOL
-// console.log(makeAcronym("don't over think stuff")); // DOTS
+console.log(makeAcronym("same stuff different day")); // SSDD
+console.log(makeAcronym("Laugh out loud")); // LOL
+console.log(makeAcronym("don't over think stuff")); // DOTS
