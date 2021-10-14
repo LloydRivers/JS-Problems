@@ -7,7 +7,7 @@ function lengthiestWord(str) {
     let first = words[0];
     // console.log(first)
     for (let i = 1; i < words.length; i++) {
-       if (words[i].length > first.length ) {
+       if (words[i].length >= first.length ) {
           first = words[i]
        }
     }
