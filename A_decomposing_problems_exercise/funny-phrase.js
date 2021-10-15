@@ -1,6 +1,7 @@
 // Write a function `funnyPhrase` that accepts a sentence string as an argument. The function should
 // return the sentence where every other word has its vowels repeated twice consecutively.
 // Vowels are the letters a, e, i, o, u.
+
 let vowels = "a, e, i, o, u";
 
 function funnyPhrase(str) {
@@ -14,7 +15,7 @@ function funnyPhrase(str) {
       sentence.push(words[i]);
     }
   }
-  return sentence.join(' ')
+  return sentence.join(" ");
 }
 
 function doubelVowel(words) {
