@@ -3,19 +3,30 @@
 // their corresponding values.
 
 function wordReplace(str, obj) {
-    let otherobj = []
-    let words = str.split(' ');
-    for (let i = 0; i < words.length; i++) {
-        
-        
+  let result = [];
+  let keyArr = Object.keys(obj);
+
+  let words = str.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    if (keyArr.includes(words[i])) {
+      result.push(obj[words[i]]);
+    } else {
+        result.push(words[i])
     }
+  }
+  return result.join(' ')
 }
 
-console.log(wordReplace("I never take naps during the day", { never: "always", day: "weekend" }));
+console.log(
+  wordReplace("I never take naps during the day", {
+    never: "always",
+    day: "weekend",
+  })
+);
 // 'I always take naps during the weekend'
 
-// console.log(wordReplace("the park is closed", { closed: "open", the: "a" }));
-// // 'a park is open'
+console.log(wordReplace("the park is closed", { closed: "open", the: "a" }));
+// 'a park is open'
 
-// console.log(wordReplace("I do what I want", { I: "we", cat: "dog" }));
-// // 'we do what we want'
+console.log(wordReplace("I do what I want", { I: "we", cat: "dog" }));
+// 'we do what we want'
