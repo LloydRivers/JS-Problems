@@ -19,6 +19,6 @@ let dog = {
   console.log(dog.breed); // PUG
   console.log(dog.favoriteFoods); // ["bacon", "sausage"]
   
-  for (let property in dog) {
-    console.log(property + " is " + dog[property]);
+  for (let key in dog) {
+    console.log(key + " is " + dog[key]);
   }
