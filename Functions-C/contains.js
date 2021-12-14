@@ -16,3 +16,8 @@ console.log(contains("lion's share", "on")); // true
 console.log(contains("SORRY", "or")); // true
 console.log(contains("tangent", "gem")); // false
 console.log(contains("clock", "ok")); // false
+
+
+contains.array.forEach(element => {
+    
+});
