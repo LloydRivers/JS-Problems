@@ -1,4 +1,4 @@
-// Find the person who has the most skills in the users object.
+// Set your name in the users object without modifying the original users object
 
 const users = {
     Alex: {
@@ -51,16 +51,15 @@ const users = {
       points: 40
     }
   }
+  
 
-
-     let count = 0;
-     let user = '';
-for(const keys in users){
-   if(count < users[keys].skills.length ){
-       count = users[keys].skills.length
-       user = keys
-       
-   };
-   
-}
-// console.log(user);
+ let combine = {...users}
+ console.log(combine);
+ combine.MrDoe = {
+    email: 'doe.com',
+    skills: ['HTML', 'CSS','Node'],
+    age: 25,
+    isLoggedIn: true,
+    points: 70
+ }
+ console.log(combine);

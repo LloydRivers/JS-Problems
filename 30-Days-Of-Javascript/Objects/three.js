@@ -1,4 +1,5 @@
-// Find the person who has the most skills in the users object.
+// Count logged in users 
+
 
 const users = {
     Alex: {
@@ -52,15 +53,14 @@ const users = {
     }
   }
 
-
-     let count = 0;
-     let user = '';
-for(const keys in users){
-   if(count < users[keys].skills.length ){
-       count = users[keys].skills.length
-       user = keys
-       
-   };
-   
+ 
+  let count = 0;
+    for(const key in users){
+        if(users[key].isLoggedIn === true){
+            count++
+    };
 }
-// console.log(user);
+console.log(count);
+
+let totalUsers = 0
+

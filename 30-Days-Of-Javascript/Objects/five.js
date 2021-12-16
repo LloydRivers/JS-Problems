@@ -1,4 +1,4 @@
-// Find the person who has the most skills in the users object.
+// Find people who are MERN stack developer from the users object.
 
 const users = {
     Alex: {
@@ -51,16 +51,12 @@ const users = {
       points: 40
     }
   }
-
-
-     let count = 0;
-     let user = '';
-for(const keys in users){
-   if(count < users[keys].skills.length ){
-       count = users[keys].skills.length
-       user = keys
-       
-   };
-   
-}
-// console.log(user);
+let mernDevs = []
+  for(let names in users){
+      let skills = users[names].skills;
+      if(skills.includes('MongoDB') && skills.includes('Express') && skills.includes('React')&& skills.includes('Node')) {
+          mernDevs.push(names)
+        }
+        
+  }
+  console.log(mernDevs);

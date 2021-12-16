@@ -1,4 +1,5 @@
-// Find the person who has the most skills in the users object.
+// Get all keys or properties of users object
+// Get all values or properties of users object
 
 const users = {
     Alex: {
@@ -52,15 +53,9 @@ const users = {
     }
   }
 
-
-     let count = 0;
-     let user = '';
-for(const keys in users){
-   if(count < users[keys].skills.length ){
-       count = users[keys].skills.length
-       user = keys
-       
-   };
-   
-}
-// console.log(user);
+  let keys = Object.keys(users)
+  console.log((keys));
+  
+  let values = Object.keys(values)
+  console.log((values));
+  
